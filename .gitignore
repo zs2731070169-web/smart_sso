@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# RSA 私钥(首次启动生成,勿提交)——用 *.pem 覆盖任意路径,防止 app/keys/ 等子目录下私钥漏提交
+*.pem
+
+# 本地环境配置
+.env
