@@ -14,3 +14,6 @@ wheels/
 
 # 本地环境配置
 .env
+
+# JetBrains IDE 个人配置
+.idea/

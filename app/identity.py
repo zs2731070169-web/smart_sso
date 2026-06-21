@@ -99,9 +99,9 @@ class YudaoIdentitySource(IdentitySource):
                     perm_data = perm.json()
                     if perm_data.get("code") == 0:
                         roles = [
-                            r.get("code") or r.get("name") or str(r)
-                            for r in ((perm_data.get("data") or {}).get("roles") or [])
-                            if isinstance(r, dict)
+                            role.get("code") or role.get("name") or str(role)
+                            for role in ((perm_data.get("data") or {}).get("roles") or [])
+                            if isinstance(role, dict)
                         ]
         except httpx.HTTPError:
             return None
